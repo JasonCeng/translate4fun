@@ -245,7 +245,7 @@ public class GreetingController {
 ```
 这个controller很简单，但是其内部做了大量工作，麻雀虽小，五脏俱全。我们一步一步来分解。
 
-@RequestMapping注解确保对/greeting的HTTP请求映射到greeting()方法。
+`@RequestMapping`注解确保对/greeting的HTTP请求映射到greeting()方法。
 
 >注意：上述例子中没有写明GET、PUT、POST等等。这是因为@RequestMapping注解默认情况下映射所有的HTTP操作。使用@RequestMapping(method=GET)指定只映射GET请求。
 
@@ -328,4 +328,5 @@ java -jar target/gs-rest-service-0.1.0.jar
 
 ## 参考
 [1] [2019/03/30官方英文原文：Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
+
 [2] [2014/01/26翻译：构建一个RESTful Web Service（Building a RESTful Web Service）](https://blog.csdn.net/kingzone_2008/article/details/18793237)
